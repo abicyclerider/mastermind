@@ -1,0 +1,5 @@
+Glasses:
+::Game game initialization
+::Board board state + display
+::CodeMaker generates and evaluates codes
+::CodeBreaker handles player guesses
