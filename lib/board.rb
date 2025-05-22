@@ -1,7 +1,8 @@
 require 'colorize'
+require_relative 'handel_colors'
 
 class Board
-  
+  include HandelColors
 
   def initialize
     @board_state = []
