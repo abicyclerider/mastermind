@@ -14,7 +14,7 @@ class Board
   end
 
   def display_board
-    
+    @board_state.each {|row| print_color_row(row)}
   end
   
 end
