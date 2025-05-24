@@ -2,13 +2,14 @@
 
 require_relative './handel_colors'
 
+# Module for getting user input of guesses
 class CodeBreaker
   include HandelColors
   def initialize(code_length)
     @code_length = code_length
   end
 
-  def get_guess
+  def retrieve_guess
     loop do
       puts 'Enter a valid guess:'
       guess = gets.chomp.split('')

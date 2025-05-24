@@ -3,7 +3,7 @@
 require_relative './board'
 require_relative './code_maker'
 require_relative './code_breaker'
-
+# Class to store state and game business logic
 class Game
   CODE_LENGTH = 4
   BOARD_LENGTH = 10
@@ -23,8 +23,7 @@ class Game
       if red_pegs == CODE_LENGTH
         puts 'YAY winning guess!'
         break
-      end
-      if @num_guesses > BOARD_LENGTH - 1
+      elsif @num_guesses > BOARD_LENGTH - 1
         puts 'Out of guesses. Game over'
         break
       end
@@ -41,7 +40,7 @@ class Game
   end
 
   def play_round
-    guess = @code_breaker.get_guess
+    guess = @code_breaker.retrieve_guess
     red_pins = @code_maker.check_exact_match(guess)
     white_pins = @code_maker.check_color_match(guess) - red_pins
     pegs = generate_pegs(red_pins, white_pins)

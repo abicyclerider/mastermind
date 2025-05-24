@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require_relative './handel_colors'
-
+# Class to generate code and evaluate guesses
 class CodeMaker
   include HandelColors
   def initialize(code_length)

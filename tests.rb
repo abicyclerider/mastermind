@@ -6,7 +6,7 @@ require_relative './lib/code_maker'
 require_relative './lib/code_breaker'
 require_relative './lib/game'
 
-include HandelColors
+# include HandelColors
 
 # test_board = Board.new
 # color_permutations_array = ["1", "2", "3", "4"].permutation.to_a

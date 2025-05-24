@@ -2,7 +2,7 @@
 
 require 'colorize'
 require_relative 'handel_colors'
-
+# Class for display of matermind
 class Board
   include HandelColors
 
