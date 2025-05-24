@@ -4,7 +4,7 @@ require_relative './code_breaker'
 
 class Game
   CODE_LENGTH = 4
-  BOARD_LENGTH = 1000
+  BOARD_LENGTH = 10
   RED_PIN = "1"
   WHITE_PIN = "7"
 
@@ -17,8 +17,13 @@ class Game
 
   def play_game
     loop do
-      play_round
+      red_pegs = play_round
+      if red_pegs == CODE_LENGTH
+        puts "YAY winning guess!"
+        break
+      end
       if @num_guesses > BOARD_LENGTH - 1
+        puts "Out of guesses. Game over"
         break
       end
     end  
@@ -40,6 +45,7 @@ class Game
     @board.update_state(guess, pegs)
     @board.display_board    
     @num_guesses += 1
+    red_pins
   end
 
 end
