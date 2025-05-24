@@ -1,13 +1,13 @@
 module HandelColors
   COLOR_MAP = {
-      "red" => :red,
-      "green" => :green,
-      "blue" => :blue,
-      "yellow" => :yellow,
-      "magenta" => :magenta,
-      "cyan" => :cyan,
-      "white" => :white,
-      "black" => :black
+      "1" => :red,
+      "2" => :green,
+      "3" => :blue,
+      "4" => :yellow,
+      "5" => :magenta,
+      "6" => :cyan,
+      "7" => :white,
+      "8" => :black
 }.freeze
 
   def available_colors
