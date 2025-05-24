@@ -2,7 +2,7 @@ require_relative './handel_colors'
 
 class CodeMaker
   include HandelColors
-  def initialize(code_length = 4)
+  def initialize(code_length)
     # Samples colors without replacement so no repeats
     @secret_code = available_colors.sample(code_length)
   end

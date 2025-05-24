@@ -2,7 +2,7 @@ require_relative './handel_colors'
 
 class CodeBreaker
   include HandelColors
-  def initialize(code_length = 4)
+  def initialize(code_length)
     @code_length = code_length
   end
 
