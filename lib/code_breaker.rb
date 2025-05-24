@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './handel_colors'
 
 class CodeBreaker
@@ -8,15 +10,13 @@ class CodeBreaker
 
   def get_guess
     loop do
-      puts "Enter a valid guess:"
-      guess=gets.chomp.split('')
-      if validate_guess?(guess)
-        return guess
-      end
-    end  
+      puts 'Enter a valid guess:'
+      guess = gets.chomp.split('')
+      return guess if validate_guess?(guess)
+    end
   end
 
-  private 
+  private
 
   def validate_guess?(guess)
     valid_length?(guess) && valid_elements?(guess)
@@ -27,6 +27,6 @@ class CodeBreaker
   end
 
   def valid_elements?(guess)
-    guess.all? {|element| available_colors.include?(element)}
+    guess.all? { |element| available_colors.include?(element) }
   end
 end

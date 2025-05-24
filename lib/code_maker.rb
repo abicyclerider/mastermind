@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './handel_colors'
 
 class CodeMaker
@@ -8,7 +10,7 @@ class CodeMaker
   end
 
   def check_color_match(guess)
-    @secret_code.sum { |element| [@secret_code.count(element), guess.count(element)].min  }
+    @secret_code.sum { |element| [@secret_code.count(element), guess.count(element)].min }
   end
 
   def check_exact_match(guess)

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'colorize'
 require_relative 'handel_colors'
 
@@ -13,12 +15,11 @@ class Board
   end
 
   def display_board
-    @board_state.each do |state| 
+    @board_state.each do |state|
       print_color_row(state[0])
       print '||'
       print_color_row(state[1])
       puts
     end
   end
-  
 end
