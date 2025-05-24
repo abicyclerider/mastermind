@@ -2,6 +2,7 @@ require_relative './lib/board'
 require_relative './lib/handel_colors'
 require_relative './lib/code_maker'
 require_relative './lib/code_breaker'
+require_relative './lib/game'
 
 include HandelColors
 
@@ -33,3 +34,5 @@ puts guess
 =end
 
 
+test_game = Game.new()
+test_game.play_game
