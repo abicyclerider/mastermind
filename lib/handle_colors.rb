@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Module for handling color map and associated information
-module HandelColors
+module HandleColors
   COLOR_MAP = {
     '1' => :red,
     '2' => :green,

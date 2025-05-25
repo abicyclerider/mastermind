@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 require 'colorize'
-require_relative 'handel_colors'
+require_relative 'handle_colors'
 # Class for display of matermind
 class Board
-  include HandelColors
+  include HandleColors
 
   def initialize
     @board_state = []

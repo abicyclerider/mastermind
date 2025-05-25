@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative './handel_colors'
+require_relative './handle_colors'
 
 # Module for getting user input of guesses
 class CodeBreaker
-  include HandelColors
+  include HandleColors
   def initialize(code_length)
     @code_length = code_length
   end

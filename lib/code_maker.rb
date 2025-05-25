@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative './handel_colors'
+require_relative './handle_colors'
 # Class to generate code and evaluate guesses
 class CodeMaker
-  include HandelColors
+  include HandleColors
   def initialize(code_length)
     # Samples colors without replacement so no repeats
     @secret_code = available_colors.sample(code_length)
